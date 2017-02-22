@@ -1,4 +1,7 @@
-<?php $this->engine->loadExtension(new League\Plates\Extension\URI($_SERVER['PATH_INFO'])); ?>
+<?php
+	$this->engine->loadExtension(new League\Plates\Extension\URI($_SERVER['PATH_INFO']));
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +27,7 @@
 	<main>
 		<?= $this->section('main_content') ?>
 	</main>
-	
+
 	<footer role="contentinfo">
 		<p aria-label="copyright">
 			<small>© AKA Optics SAS 2012-2016 | All Rights Reserved – Please use the contact information to report any problem with this web site.</small>
@@ -35,7 +38,7 @@
 			<li aria-label="link to "<?php echo $w_site_name; ?>" google plus page"><a href="https://plus.google.com/" target="blank"><i class="fa fa-google-plus"></i></a></li>
 			<li aria-label="link to "<?php echo $w_site_name; ?>" linkedin page"><a href="https://fr.linkedin.com/" target="blank"><i class="fa fa-linkedin"></i></a></li>
 		</ul>
-		
+
 
 	</footer>
 

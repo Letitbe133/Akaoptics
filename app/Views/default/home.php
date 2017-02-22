@@ -17,7 +17,7 @@
 		    <?php } ?>
 		  </ol>
 	  <!-- Wrapper for slides -->
-	
+
 		  <div class="carousel-inner" role="listbox">
 		  	<?php foreach($products as $key=>$product) { ?>
 		    <div class="item <?php if($key == 0) { echo 'active'; } ?>">
@@ -34,7 +34,7 @@
 		    </div>
 		    <?php } ?>
 		  </div>
-	
+
 	  	<!-- Left and right controls -->
 		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 		  	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -49,16 +49,16 @@
   <h2 class="meet">MEET AKA OPTICS</h2>
   </div>
     <div id="events" class="container col-xs-12">
-        
-       
+
+
         <ul class="list-inline list-unstyled hidescreen">
-        	
+
         <?php
 			if (count($events)>0)
 			{
 	        	// S'il n'y a pas d'events, afficher un message "No events." par exemple
 	        	foreach ($events as $event)
-	        	{ 
+	        	{
 	        		$date = strtotime($event['date']);
         			$event['formatDate'] = date('Y-M-d', $date);
 	        	?>
@@ -73,11 +73,11 @@
 		<?php
 			}
         ?>
-        
+
         </ul>
-        
+
     </div>
-    
+
 </section>
 <?php $this->stop('main_content') ?>
 

@@ -5,8 +5,8 @@
 <div id="dash-password">
     <div class="login-form">
         <h1 class="text-center">Are you lost in the world like me?</h1>
-        
-        <form class="text-center" action="/akaproject/public/lostpassword" method="POST">
+
+        <form class="text-center" action="/akaoptics/public/lostpassword" method="POST">
             <div class="form-group">
                 <input type="text" name="email" placeholder="Email"/>
             </div>

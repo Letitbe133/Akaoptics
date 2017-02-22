@@ -8,7 +8,7 @@ function display ()
 
     // enlever la classe .active
     eventActive.removeClass("activeEvent");
-    
+
     // afficher l'event suivant
     eventSuivant = eventActive.next();
 
@@ -26,15 +26,11 @@ function display ()
 
 var eventFirst = $('#events ul li:first');
 
+// Fonction de slide-in des events désactivée à la demande du client
+// décommenter les lignes suivantes pour réactiver
+
 // ajout de la classe .active au premier event
-$(eventFirst).addClass("activeEvent");
+// $(eventFirst).addClass("activeEvent");
 
 // Affichage du slider, délai 10s
-setInterval(display, 10000);
-    
-
-
-
-
-
-
+// setInterval(display, 10000);
